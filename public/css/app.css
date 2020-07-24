@@ -9946,6 +9946,8 @@ header h1 {
 
 #carouselExampleIndicators {
   height: 90vh;
+  display: flex;
+  align-items: center;
 }
 
 ul {
@@ -9964,6 +9966,19 @@ ul li:hover {
   background-color: #dd003f;
 }
 
+.navbar-nav {
+  border-bottom: solid 1px white;
+  border-top: solid 1px white;
+  max-width: max-content;
+}
+.navbar-nav li {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.navbar-nav li:hover {
+  background-color: #dd003f;
+}
+
 .contaainer {
   position: relative;
 }
@@ -9974,10 +9989,22 @@ ul li:hover {
   width: 100%;
 }
 
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+#butcaro {
+  height: 70px;
+  width: 200px;
+  margin-top: 50px;
+}
+
 #parent {
   position: relative;
   width: 100%;
-  height: 145vh;
+  height: 190vh;
   background-image: url("../../images/main_bg.jpg");
   text-align: center;
 }
@@ -9991,6 +10018,7 @@ ul li:hover {
   font-size: 24px;
   text-align: center;
   margin-left: 10%;
+  padding: 0;
 }
 
 h2 {
@@ -10025,6 +10053,70 @@ p {
   margin-right: 200px;
 }
 
+#v-pills-home-tab #v-pills-profile-tab #v-pills-messages-tab #v-pills-settings-tab {
+  padding: 0em;
+  border-bottom: 1px solid lightgrey;
+}
+
+.navs p {
+  font-size: 20px;
+  text-align: center;
+}
+.navs i {
+  text-decoration: none;
+  color: lightgrey;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#v-pills-home-tab {
+  border-right: #dd003f 4px solid;
+}
+#v-pills-home-tab:hover {
+  color: #dd003f;
+}
+
+#v-pills-profile-tab:hover {
+  border-right: #dd003f 4px solid;
+}
+#v-pills-profile-tab:hover:hover {
+  color: #dd003f;
+}
+
+#v-pills-messages-tab:hover:hover {
+  color: #dd003f;
+  border-right: #dd003f 4px solid;
+}
+
+#v-pills-settings-tab:hover:hover {
+  color: #dd003f;
+  border-right: #dd003f 4px solid;
+}
+
+#menu {
+  padding-top: 3em;
+}
+
+#menuCards {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px lightgrey dashed;
+}
+
+#menuCards img {
+  width: 30%;
+  height: 80%;
+  border-radius: 50%;
+  border: 5px lightgrey solid;
+}
+
+.fas:hover {
+  color: #dd003f;
+}
+
 .chef {
   text-align: center;
   height: 70vh;
@@ -10044,6 +10136,25 @@ p {
   margin: 8%;
 }
 
+#parent2 {
+  position: relative;
+  width: 100%;
+  height: 170vh;
+  background-image: url("../../images/main_bg.jpg");
+  text-align: center;
+}
+#parent2 #menu {
+  position: absolute;
+  top: 5%;
+  width: 80%;
+  height: 131, 5vh;
+  background-color: white;
+  border: solid 1px grey;
+  font-size: 24px;
+  text-align: center;
+  margin-left: 10%;
+}
+
 .formimg {
   background-image: url("../../images/book_table_bg.jpg");
   background-size: cover;
@@ -10061,26 +10172,43 @@ p {
   padding-top: 5%;
 }
 
-.imgcard {
-  height: 200px;
-}
-
-.cartered {
+.rougecarte {
+  font-size: 18px;
   background-color: red;
   height: 30px;
-  width: 90%;
-  text-align: center;
+  width: 70%;
   margin: -5%;
   padding-bottom: 20px;
   border-radius: 5%;
+  text-align: center;
+  background-color: #dc0041;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-h5 {
-  font-size: 18px;
-}
-h5 span {
+.rougecarte span {
   font-size: 25px;
   color: white;
+}
+
+.imgblog {
+  border-radius: 5%;
+  border: solid 8px lightgrey;
+}
+
+.card {
+  align-items: center;
+}
+
+.card-body {
+  margin-top: 20px;
+}
+
+.testimonial1 {
+  border-radius: 50%;
+  width: 150px;
+  border: 3px solid white;
 }
 
 #parent1 {
@@ -10159,10 +10287,21 @@ h5 span {
 .footer {
   padding-top: 2em;
   background-image: url("../../images/team_background.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container-fluid, .footer .container-sm, .footer .container-md, .footer .container-lg, .footer .container-xl {
+  width: 80%;
 }
 .footer #imageFooter img {
   width: 80px;
   padding: 0.4em;
+}
+
+.footer p i {
+  font-size: 20px;
 }
 
 .footer2 {
